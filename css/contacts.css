@@ -25,7 +25,7 @@ body { font-family: "Lato", sans-serif; color: #333; background: #fff; font-size
 .container { min-width: 320px; max-width: 1170px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 0 15px; margin: 0 auto; }
 @media screen and (max-width: 860px) { .container { padding: 0; } }
 
-p { font-family: "OpenSansRegular"; font-size: 16px; font-color: #454545; }
+p { font-family: "OpenSansRegular"; font-size: 16px; font-color: #454; }
 
 h4 { font-family: "LatoBold", arial; font-size: 24px; color: #333; }
 
@@ -88,10 +88,12 @@ h4 { font-family: "LatoBold", arial; font-size: 24px; color: #333; }
 
 .first-input { margin-right: 29px; }
 
-.map { background: url("../img/contacts-page/map.jpg") -284px 0 no-repeat; padding-bottom: 720px; }
-@media screen and (max-width: 1150px) { .map { background-position: -680px 0px; } }
-@media screen and (max-width: 860px) { .map { background-position: -980px 0px; } }
-@media screen and (max-width: 650px) { .map { background-position: -1000px 0px; } }
+footer { margin: 0 !important; }
+
+.search { background: url("../img/contacts-page/map.jpg") -284px 0 no-repeat; padding-bottom: 720px; }
+@media screen and (max-width: 1150px) { .search { background-position: -680px 0px; } }
+@media screen and (max-width: 860px) { .search { background-position: -980px 0px; } }
+@media screen and (max-width: 650px) { .search { background-position: -1000px 0px; } }
 
 .contact-promo { background: url(../upload/contact-page/contact-promo-bg.jpg) -236px 0 no-repeat; padding-bottom: 400px; background-size: cover; position: relative; }
 .contact-promo h3 { text-transform: uppercase; color: #fff; margin: 0; font-family: "LatoBold"; font-size: 48px; position: absolute; top: 160px; letter-spacing: 3px; left: 50%; margin-left: -153px; }

@@ -66,35 +66,49 @@ h4 { font-family: "LatoBold", arial; font-size: 24px; color: #333; }
 @media screen and (max-width: 650px) { .menu__link { font-size: 12px; } }
 .menu__link:hover { color: #cca66b; border-bottom: 2px solid #cca66b; }
 
-.rooms-promo { background: url("../upload/rooms-page/promo-bc.jpg") 0 0 no-repeat; padding-bottom: 398px; background-size: cover; position: relative; }
-.rooms-promo .container h3 { text-transform: uppercase; color: #fff; margin: 0; font-family: "LatoBold"; font-size: 48px; position: absolute; top: 160px; letter-spacing: 3px; left: 50%; margin-left: -113px; }
-.rooms-promo .container h3::after { content: ""; position: absolute; width: 100px; height: 3px; bottom: -16px; left: 50%; margin-left: -50px; background: #cca66b; }
+.columns { margin-top: 70px; }
 
-.rooms-list { display: flex; flex-flow: wrap row; justify-content: space-between; margin-top: 87px; }
-.rooms-list .room-block { width: 555px; margin-bottom: 60px; }
-@media screen and (max-width: 1150px) { .rooms-list .room-block { margin: 0 auto 60px auto; } }
-@media screen and (max-width: 650px) { .rooms-list .room-block { width: 95%; } }
+.main-column { width: 848px; float: left; }
+.main-column .info-block .h_underline { margin: 0 0 41px 0; position: relative; font-size: 36px; letter-spacing: 1px; }
+.main-column .info-block .h_underline::after { content: ""; position: absolute; width: 100px; height: 3px; bottom: -16px; left: 0; background: #cca66b; }
+.main-column .info-block .info-txt { line-height: 25px; font-family: "OpenSansRegular"; font-size: 16px; letter-spacing: 1px; }
 
-.room-list-img { width: 555px; height: 322px; }
-@media screen and (max-width: 650px) { .room-list-img { width: 100%; height: auto; } }
+.slide img { width: 848px !important; height: 512px !important; }
 
-.room-list-tag { font-family: "LatoBold"; font-size: 24px; color: #333; margin: 23px 0 0 0; letter-spacing: 1px; }
+.under-slide img { width: 137px; height: 94px; margin: 1px 3px; }
 
-.room-list-txt { color: #454; font-family: "OpenSansRegular"; font-size: 16px; line-height: 26px; margin-top: 11px; letter-spacing: 1px; height: 78px; }
-@media screen and (max-width: 650px) { .room-list-txt { height: auto; } }
+.slick-slide { outline: none; position: relative; }
 
-.rooms-list-links .ic-bed { background-image: url(../img/rooms-page/ic-bed.png); }
-.rooms-list-links .ic-tv { background-image: url(../img/rooms-page/ic-tv.png); }
-.rooms-list-links .ic-wifi { background-image: url(../img/rooms-page/ic-wifi.png); }
-.rooms-list-links .ic-drink { background-image: url(../img/rooms-page/ic-drink.png); }
-.rooms-list-links .ic-bath { background-image: url(../img/rooms-page/ic-bath.png); }
-.rooms-list-links .ic-tbl { background-image: url(../img/rooms-page/ic-tbl.png); }
+.slick-arrow { position: absolute; width: 50px; height: 100%; font-size: 0; background: transparent; border: none; z-index: 100; top: 50px; }
+.slick-arrow::after { content: ""; width: 100%; height: 100%; position: absolute; z-index: 101; left: 0; top: 0; }
 
-.rooms-list-links span { margin-right: 16px; display: inline-block; width: 55px; height: 55px; background-position: 50%; background-repeat: no-repeat; border-radius: 50%; border: 1px solid #f0f0f0; margin-top: 10px; }
+.slick-prev::after { background: url("../img/room-info-page/arrow.png") 50% 50% no-repeat; }
 
-.btn-more { margin-top: 7px; padding: 14px 30px 9px 33px; border-radius: 4px; background: #cca66b; display: inline-block; color: #fff; text-decoration: none; letter-spacing: 1px; font-family: "LatoRegular"; font-size: 18px; }
+.slick-next::after { background: url("../img/room-info-page/arrow.png") 50% 50% no-repeat; -webkit-transform: rotate(180deg); -moz-transform: rotate(180deg); -ms-transform: rotate(180deg); -o-transform: rotate(180deg); transform: rotate(180deg); }
 
-footer { margin-top: 15px !important; }
+.slick-next { right: 0px; }
+
+.slick-prev { left: 0px; }
+
+.slick-dots { position: absolute; bottom: -39px; text-align: center; left: 50%; margin: 0 0 0 -7.2%; }
+@media screen and (max-width: 860px) { .slick-dots { display: none; } }
+.slick-dots li { margin: 0 7px; display: inline-block; }
+.slick-dots .slick-active button { background: #cca66b; }
+.slick-dots button { background: transparent; -webkit-border-radius: 50%; border-radius: 50%; width: 11px; height: 11px; border: 1px solid #cca66b; font-size: 0; padding: 0; margin: 0; }
+
+.sidebar { width: 262px; float: right; }
+.sidebar .forms-block { background: #ddd; }
+.sidebar .forms-block h4 { margin: 0 0 16px 0; font-size: 19px; font-family: "LatoBold"; }
+
+.forms-block { background: #ddd; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; letter-spacing: 1px; padding: 28px 20px; margin: 10px 0 0 0; }
+@media screen and (max-width: 650px) { .forms-block { text-align: center; padding: 15px; margin: 10px 0 0 0; } }
+.forms-block input { width: 220px; height: 48px; border: 1px solid #bbb; -webkit-border-radius: 6px; border-radius: 6px; margin: 0 0 20px 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 5px 10px; font-family: "Lato", sans-serif; font-size: 14px; }
+.forms-block select { width: 220px; height: 48px; color: #777; -webkit-border-radius: 6px; border-radius: 6px; border: 1px solid #bbb; font-family: "Lato", sans-serif; font-size: 14px; margin: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 5px 10px; }
+@media screen and (max-width: 650px) { .forms-block select { width: 90%; } }
+.forms-block button { font-size: 18px; font-family: "Lato", sans-serif; color: #FFF; background: #cca66b; display: inline-block; width: 100%; height: 48px; line-height: 48px; text-align: center; border: none; margin: 20px 0 0 0; -webkit-border-radius: 6px; border-radius: 6px; }
+@media screen and (max-width: 650px) { .forms-block button { display: inline-block; width: 263px; } }
+.forms-block .form-row { display: block; position: relative; }
+.forms-block .form-row::after { content: "c"; position: absolute; top: 14px; right: 19px; font-family: "untitled-font-2"; font-size: 16px; color: #777; }
 
 footer { margin: 120px 0 0 0; padding: 41px 0 0 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; background: #333; }
 footer .main-footer { display: flex; -webkit-justify-content: space-between; justify-content: space-between; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; color: #FFF; }

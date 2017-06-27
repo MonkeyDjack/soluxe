@@ -25,7 +25,7 @@ body { font-family: "Lato", sans-serif; color: #333; background: #fff; font-size
 .container { min-width: 320px; max-width: 1170px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 0 15px; margin: 0 auto; }
 @media screen and (max-width: 860px) { .container { padding: 0; } }
 
-p { font-family: "OpenSansRegular"; font-size: 16px; font-color: #454545; }
+p { font-family: "OpenSansRegular"; font-size: 16px; font-color: #454; }
 
 h4 { font-family: "LatoBold", arial; font-size: 24px; color: #333; }
 

@@ -25,7 +25,7 @@ body { font-family: "Lato", sans-serif; color: #333; background: #fff; font-size
 .container { min-width: 320px; max-width: 1170px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 0 15px; margin: 0 auto; }
 @media screen and (max-width: 860px) { .container { padding: 0; } }
 
-p { font-family: "OpenSansRegular"; font-size: 16px; font-color: #454545; }
+p { font-family: "OpenSansRegular"; font-size: 16px; font-color: #454; }
 
 h4 { font-family: "LatoBold", arial; font-size: 24px; color: #333; }
 
@@ -74,7 +74,7 @@ h4 { font-family: "LatoBold", arial; font-size: 24px; color: #333; }
 .info-block { text-align: center; margin-top: 80px; }
 .info-block h4 { margin: 0; letter-spacing: 2px; font-family: "LatoBold"; font-size: 36px; color: #333; position: relative; }
 .info-block h4::after { content: ""; position: absolute; width: 100px; height: 3px; bottom: -11px; left: 50%; margin-left: -50px; background: #cca66b; }
-.info-block p { font-family: "OpenSansRegular"; font-size: 16px; color: #454545; letter-spacing: 1px; line-height: 26px; margin: 36px 0; }
+.info-block p { font-family: "OpenSansRegular"; font-size: 16px; color: #454; letter-spacing: 1px; line-height: 26px; margin: 36px 0; }
 
 .halls-list { margin-top: 76px; }
 .halls-list .hall-block { margin-bottom: 59px; }
