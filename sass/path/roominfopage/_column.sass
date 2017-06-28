@@ -6,6 +6,9 @@
 .main-column
 	width: 848px
 	float: left
+	+md
+		width: 95%
+		margin: 0 auto
 	.info-block
 		.h_underline
 			margin: 0 0 41px 0
@@ -25,7 +28,8 @@
 			font-family: "OpenSansRegular"
 			font-size: 16px
 			letter-spacing: 1px
-
+.soluxe-slide
+	margin-top: 25px
 .slide
 	img
 		width: 848px !important
@@ -110,8 +114,7 @@
 	width: 262px
 	float: right
 	+md
-		margin: 30px auto
-		float: none
+		display: none
 	.forms-block
 		background: $light-g
 		h4
@@ -187,3 +190,54 @@
 			font-size: 16px 
 			color: #777 
 			
+
+.left-line-h
+	font-size: 26px
+	margin: 0
+	letter-spacing: 2px
+	padding-left: 87px
+	position: relative
+	&::before
+		content: ""
+		width: 70px
+		height: 3px
+		background: $gold
+		position: absolute
+		top: 15px
+		left: 0px
+
+
+.row
+	display: inline-block
+	width: 263px
+	margin-right: 26px
+	margin-top: 32px
+	+md
+		display: block
+		margin: 32px auto 0 auto
+
+.features-list
+	@each $icon in bed, tv, wifi, drink, bath, table, phone, sofa,dish, safe, bathstuff, temp
+		.ic-#{$icon}
+			background-image: url(../img/room-info-page/ic-#{$icon}.png)
+			background-position: 0 50%
+			background-repeat: no-repeat
+
+.features-list
+	margin-top: 52px
+	span
+		padding: 24px 0 28px 66px
+		font-family: "LatoBold", arial
+		font-size: 15px
+		color: $txt-c
+		display: inline-block
+
+.features-list .row:last-child
+	margin-right: 0
+	+md
+	margin-right: auto
+
+.other-rooms
+	margin-top: 68px
+	.rooms-list
+		margin-top: 46px

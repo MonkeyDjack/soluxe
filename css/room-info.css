@@ -66,13 +66,42 @@ h4 { font-family: "LatoBold", arial; font-size: 24px; color: #333; }
 @media screen and (max-width: 650px) { .menu__link { font-size: 12px; } }
 .menu__link:hover { color: #cca66b; border-bottom: 2px solid #cca66b; }
 
+.rooms-list { display: flex; flex-flow: wrap row; justify-content: space-between; margin-top: 87px; }
+.rooms-list .room-block { width: 555px; margin-bottom: 60px; }
+@media screen and (max-width: 1150px) { .rooms-list .room-block { margin: 0 auto 60px auto; } }
+@media screen and (max-width: 650px) { .rooms-list .room-block { width: 95%; } }
+
+.room-list-img { width: 555px; height: 322px; }
+@media screen and (max-width: 650px) { .room-list-img { width: 100%; height: auto; } }
+
+.room-list-tag { font-family: "LatoBold"; font-size: 24px; color: #333; margin: 23px 0 0 0; letter-spacing: 1px; }
+
+.room-list-txt { color: #454; font-family: "OpenSansRegular"; font-size: 16px; line-height: 26px; margin-top: 11px; letter-spacing: 1px; height: 78px; }
+@media screen and (max-width: 650px) { .room-list-txt { height: auto; } }
+
+.rooms-list-links .ic-bed { background-image: url(../img/rooms-page/ic-bed.png); }
+.rooms-list-links .ic-tv { background-image: url(../img/rooms-page/ic-tv.png); }
+.rooms-list-links .ic-wifi { background-image: url(../img/rooms-page/ic-wifi.png); }
+.rooms-list-links .ic-drink { background-image: url(../img/rooms-page/ic-drink.png); }
+.rooms-list-links .ic-bath { background-image: url(../img/rooms-page/ic-bath.png); }
+.rooms-list-links .ic-tbl { background-image: url(../img/rooms-page/ic-tbl.png); }
+
+.rooms-list-links span { margin-right: 16px; display: inline-block; width: 55px; height: 55px; background-position: 50%; background-repeat: no-repeat; border-radius: 50%; border: 1px solid #f0f0f0; margin-top: 10px; }
+
+.btn-more { margin-top: 7px; padding: 14px 30px 9px 33px; border-radius: 4px; background: #cca66b; display: inline-block; color: #fff; text-decoration: none; letter-spacing: 1px; font-family: "LatoRegular"; font-size: 18px; }
+
+footer { margin-top: 15px !important; }
+
 .columns { margin-top: 70px; }
 @media screen and (max-width: 1150px) { .columns { margin: 70px auto 10px auto; } }
 
 .main-column { width: 848px; float: left; }
+@media screen and (max-width: 1150px) { .main-column { width: 95%; margin: 0 auto; } }
 .main-column .info-block .h_underline { margin: 0 0 41px 0; position: relative; font-size: 36px; letter-spacing: 1px; }
 .main-column .info-block .h_underline::after { content: ""; position: absolute; width: 100px; height: 3px; bottom: -16px; left: 0; background: #cca66b; }
 .main-column .info-block .info-txt { line-height: 25px; font-family: "OpenSansRegular"; font-size: 16px; letter-spacing: 1px; }
+
+.soluxe-slide { margin-top: 25px; }
 
 .slide img { width: 848px !important; height: 512px !important; }
 @media screen and (max-width: 1150px) { .slide img { width: 100% !important; height: auto !important; margin: 0 auto; } }
@@ -101,7 +130,7 @@ h4 { font-family: "LatoBold", arial; font-size: 24px; color: #333; }
 .slick-dots button { background: transparent; -webkit-border-radius: 50%; border-radius: 50%; width: 11px; height: 11px; border: 1px solid #cca66b; font-size: 0; padding: 0; margin: 0; }
 
 .sidebar { width: 262px; float: right; }
-@media screen and (max-width: 1150px) { .sidebar { margin: 30px auto; float: none; } }
+@media screen and (max-width: 1150px) { .sidebar { display: none; } }
 .sidebar .forms-block { background: #ddd; }
 .sidebar .forms-block h4 { margin: 0 0 16px 0; font-size: 19px; font-family: "LatoBold"; }
 
@@ -112,6 +141,33 @@ h4 { font-family: "LatoBold", arial; font-size: 24px; color: #333; }
 .forms-block button { font-size: 18px; font-family: "Lato", sans-serif; color: #FFF; background: #cca66b; display: inline-block; width: 100%; height: 48px; line-height: 48px; text-align: center; border: none; margin: 20px 0 0 0; -webkit-border-radius: 6px; border-radius: 6px; }
 .forms-block .form-row { display: block; position: relative; }
 .forms-block .form-row::after { content: "c"; position: absolute; top: 14px; right: 19px; font-family: "untitled-font-2"; font-size: 16px; color: #777; }
+
+.left-line-h { font-size: 26px; margin: 0; letter-spacing: 2px; padding-left: 87px; position: relative; }
+.left-line-h::before { content: ""; width: 70px; height: 3px; background: #cca66b; position: absolute; top: 15px; left: 0px; }
+
+.row { display: inline-block; width: 263px; margin-right: 26px; margin-top: 32px; }
+@media screen and (max-width: 1150px) { .row { display: block; margin: 32px auto 0 auto; } }
+
+.features-list .ic-bed { background-image: url(../img/room-info-page/ic-bed.png); background-position: 0 50%; background-repeat: no-repeat; }
+.features-list .ic-tv { background-image: url(../img/room-info-page/ic-tv.png); background-position: 0 50%; background-repeat: no-repeat; }
+.features-list .ic-wifi { background-image: url(../img/room-info-page/ic-wifi.png); background-position: 0 50%; background-repeat: no-repeat; }
+.features-list .ic-drink { background-image: url(../img/room-info-page/ic-drink.png); background-position: 0 50%; background-repeat: no-repeat; }
+.features-list .ic-bath { background-image: url(../img/room-info-page/ic-bath.png); background-position: 0 50%; background-repeat: no-repeat; }
+.features-list .ic-table { background-image: url(../img/room-info-page/ic-table.png); background-position: 0 50%; background-repeat: no-repeat; }
+.features-list .ic-phone { background-image: url(../img/room-info-page/ic-phone.png); background-position: 0 50%; background-repeat: no-repeat; }
+.features-list .ic-sofa { background-image: url(../img/room-info-page/ic-sofa.png); background-position: 0 50%; background-repeat: no-repeat; }
+.features-list .ic-dish { background-image: url(../img/room-info-page/ic-dish.png); background-position: 0 50%; background-repeat: no-repeat; }
+.features-list .ic-safe { background-image: url(../img/room-info-page/ic-safe.png); background-position: 0 50%; background-repeat: no-repeat; }
+.features-list .ic-bathstuff { background-image: url(../img/room-info-page/ic-bathstuff.png); background-position: 0 50%; background-repeat: no-repeat; }
+.features-list .ic-temp { background-image: url(../img/room-info-page/ic-temp.png); background-position: 0 50%; background-repeat: no-repeat; }
+
+.features-list { margin-top: 52px; }
+.features-list span { padding: 24px 0 28px 66px; font-family: "LatoBold", arial; font-size: 15px; color: #333; display: inline-block; }
+
+.features-list .row:last-child { margin-right: 0; margin-right: auto; }
+
+.other-rooms { margin-top: 68px; }
+.other-rooms .rooms-list { margin-top: 46px; }
 
 footer { margin: 120px 0 0 0; padding: 41px 0 0 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; background: #333; }
 footer .main-footer { display: flex; -webkit-justify-content: space-between; justify-content: space-between; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; color: #FFF; }
