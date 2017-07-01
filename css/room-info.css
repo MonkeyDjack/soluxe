@@ -96,19 +96,22 @@ footer { margin-top: 15px !important; }
 @media screen and (max-width: 1150px) { .columns { margin: 70px auto 10px auto; } }
 
 .main-column { width: 848px; float: left; }
-@media screen and (max-width: 1150px) { .main-column { width: 95%; margin: 0 auto; } }
+@media screen and (max-width: 1150px) { .main-column { width: 95%; margin: 0 auto; float: none; } }
 .main-column .info-block .h_underline { margin: 0 0 41px 0; position: relative; font-size: 36px; letter-spacing: 1px; }
 .main-column .info-block .h_underline::after { content: ""; position: absolute; width: 100px; height: 3px; bottom: -16px; left: 0; background: #cca66b; }
 .main-column .info-block .info-txt { line-height: 25px; font-family: "OpenSansRegular"; font-size: 16px; letter-spacing: 1px; }
 
 .soluxe-slide { margin-top: 25px; }
 
-.slide img { width: 848px !important; height: 512px !important; }
-@media screen and (max-width: 1150px) { .slide img { width: 100% !important; height: auto !important; margin: 0 auto; } }
+.up-slide img { width: 848px !important; height: 512px !important; }
+@media screen and (max-width: 860px) { .up-slide img { width: 640px !important; height: auto !important; } }
+@media screen and (max-width: 650px) { .up-slide img { width: 650px !important; height: auto !important; } }
+
+.slick-active { position: relative; }
 
 .under-slide img { width: 137px; height: 94px; margin: 1px 3px; }
 
-.slick-slide { outline: none; position: relative; }
+.slick-slide { outline: none; max-width: 848px; }
 
 .slick-arrow { position: absolute; width: 50px; height: 100%; font-size: 0; background: transparent; border: none; z-index: 100; top: 50px; }
 .slick-arrow::after { content: ""; width: 100%; height: 100%; position: absolute; z-index: 101; left: 0; top: 0; }
@@ -117,7 +120,8 @@ footer { margin-top: 15px !important; }
 
 .slick-next::after { background: url("../img/room-info-page/arrow.png") 50% 50% no-repeat; -webkit-transform: rotate(180deg); -moz-transform: rotate(180deg); -ms-transform: rotate(180deg); -o-transform: rotate(180deg); transform: rotate(180deg); }
 
-.slick-current img { margin-left: 0; }
+.slick-slider { width: 848px !important; height: 512px !important; }
+@media screen and (max-width: 860px) { .slick-slider { width: 90% !important; margin: 0 auto; height: auto !important; } }
 
 .slick-next { right: 0px; }
 
@@ -130,15 +134,17 @@ footer { margin-top: 15px !important; }
 .slick-dots button { background: transparent; -webkit-border-radius: 50%; border-radius: 50%; width: 11px; height: 11px; border: 1px solid #cca66b; font-size: 0; padding: 0; margin: 0; }
 
 .sidebar { width: 262px; float: right; }
-@media screen and (max-width: 1150px) { .sidebar { display: none; } }
+@media screen and (max-width: 1150px) { .sidebar { width: 95%; float: none; margin: 0 auto; } }
 .sidebar .forms-block { background: #ddd; }
 .sidebar .forms-block h4 { margin: 0 0 16px 0; font-size: 19px; font-family: "LatoBold"; }
 
 .forms-block { background: #ddd; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; letter-spacing: 1px; padding: 28px 20px; margin: 10px 0 0 0; }
 .forms-block input { width: 220px; height: 48px; border: 1px solid #bbb; -webkit-border-radius: 6px; border-radius: 6px; margin: 0 0 20px 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 5px 10px; font-family: "Lato", sans-serif; font-size: 14px; }
+@media screen and (max-width: 1150px) { .forms-block input { width: 90%; } }
 .forms-block select { width: 220px; height: 48px; color: #777; -webkit-border-radius: 6px; border-radius: 6px; border: 1px solid #bbb; font-family: "Lato", sans-serif; font-size: 14px; margin: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 5px 10px; }
-@media screen and (max-width: 650px) { .forms-block select { width: 90%; } }
+@media screen and (max-width: 1150px) { .forms-block select { width: 90%; } }
 .forms-block button { font-size: 18px; font-family: "Lato", sans-serif; color: #FFF; background: #cca66b; display: inline-block; width: 100%; height: 48px; line-height: 48px; text-align: center; border: none; margin: 20px 0 0 0; -webkit-border-radius: 6px; border-radius: 6px; }
+@media screen and (max-width: 1150px) { .forms-block button { width: 90%; } }
 .forms-block .form-row { display: block; position: relative; }
 .forms-block .form-row::after { content: "c"; position: absolute; top: 14px; right: 19px; font-family: "untitled-font-2"; font-size: 16px; color: #777; }
 

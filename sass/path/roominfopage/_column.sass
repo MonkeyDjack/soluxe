@@ -9,6 +9,7 @@
 	+md
 		width: 95%
 		margin: 0 auto
+		float: none
 	.info-block
 		.h_underline
 			margin: 0 0 41px 0
@@ -30,14 +31,19 @@
 			letter-spacing: 1px
 .soluxe-slide
 	margin-top: 25px
-.slide
+.up-slide
 	img
 		width: 848px !important
 		height: 512px !important
-		+md
-			width: 100%!important
+		+tablet
+			width: 640px !important
 			height: auto !important
-			margin: 0 auto
+		+phone
+			width: 650px !important
+			height: auto !important
+
+.slick-active
+	position: relative
 
 .under-slide
 	img
@@ -45,9 +51,10 @@
 		height: 94px
 		margin: 1px 3px
 
+
 .slick-slide
 	outline: none
-	position: relative
+	max-width: 848px
 .slick-arrow
 	position: absolute
 	width: 50px
@@ -75,9 +82,14 @@
 	-o-transform: rotate(180deg) 
 	transform: rotate(180deg)
 
-.slick-current
-	img
-		margin-left: 0
+.slick-slider
+	width: 848px !important
+	height: 512px !important
+	+tablet
+		width: 90% !important
+		margin: 0 auto
+		height: auto !important
+
 
 .slick-next
 	right: 0px
@@ -114,7 +126,9 @@
 	width: 262px
 	float: right
 	+md
-		display: none
+		width: 95%
+		float: none
+		margin: 0 auto
 	.forms-block
 		background: $light-g
 		h4
@@ -144,6 +158,8 @@
 		padding: 5px 10px
 		font-family: 'Lato', sans-serif
 		font-size: 14px
+		+md
+			width: 90%
 	select
 		width: 220px
 		height: 48px
@@ -158,7 +174,7 @@
 		-moz-box-sizing: border-box
 		box-sizing: border-box
 		padding: 5px 10px 
-		+phone
+		+md
 			width: 90%
 			
 
@@ -176,6 +192,8 @@
 		margin: 20px 0 0 0
 		-webkit-border-radius: 6px
 		border-radius: 6px
+		+md
+			width: 90%
 		
 	.form-row 
 		display: block
